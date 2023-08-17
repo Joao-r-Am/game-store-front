@@ -1,27 +1,34 @@
-# React + TypeScript + Vite
+# Projeto Game Store - Front-end em ReactJS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O projeto **Game Store** consiste no desenvolvimento do front-end utilizando a biblioteca ReactJS, com o objetivo de criar uma interface simples para interagir com a API de gerenciamento de jogos. A aplicação front-end permitirá aos usuários consultar jogos, visualizar detalhes e adicionar novos jogos ao banco de dados por meio da API.
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ReactJS
+- Axios (para realizar requisições HTTP à API)
+- Material-UI (para componentes de interface)
+- Estado gerenciado pelo React (useState, useContext ou Redux)
 
-## Expanding the ESLint configuration
+## Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Listagem de Jogos
 
-- Configure the top-level `parserOptions` property like this:
+A aplicação front-end irá exibir uma lista de jogos disponíveis, obtidos através da API. Cada jogo será representado por um cartão contendo informações como título, gênero e plataforma. Os usuários poderão clicar em um jogo para ver mais detalhes.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+### Adição de Novos Jogos
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+A aplicação permitirá aos usuários adicionar novos jogos ao banco de dados por meio de um formulário. Os campos necessários incluem título, imagem, e preço. Ao enviar o formulário, os dados serão enviados à API para serem processados e armazenados no banco de dados.
+
+## Configuração do Ambiente
+
+1. Certifique-se de ter o Node.js instalado.
+2. Clone o repositório do projeto: `git clone https://github.com/Joao-r-Am/game-store-front.git`
+3. Navegue até o diretório do projeto: `cd game-store-front`
+4. Instale as dependências: `npm install`
+
+## Executando a Aplicação
+
+Após configurar o ambiente e instalar as dependências, execute a aplicação com o seguinte comando:
+
+```shell
+npm run dev
